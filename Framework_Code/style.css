@@ -1,0 +1,226 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF; /* Body background white */
+    color: #000000; /* Text color black */
+}
+
+a {
+    color: #0D652D; /* Main green color */
+}
+
+a:hover {
+    color: #09481F; /* Darker green on hover */
+}
+
+.btn-primary {
+    background-color: #0D652D;
+    border-color: #0D652D;
+}
+
+.btn-secondary {
+    background-color: #FECE01;
+    border-color: #FECE01;
+    /*color: #333333;*/
+}
+.btn-secondary:hover {
+    background-color: #FFD54F;
+    border-color: #FFD54F;
+}
+.btn-primary:hover {
+    background-color: #09481F;
+    border-color: #09481F;
+}
+
+/* Header */
+/* Adjusted Header Styles */
+.header {
+    background: #ffffff; /* White background initially */
+    transition: background 0.3s ease-in-out;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+#mainNav.scrolled {
+    /*background: linear-gradient(135deg, #0D652D 0%, #4CAF50 100%);*/
+    background: linear-gradient(135deg, #0D652D 0%, #4CAF50 60%, #FECE01 75%, #BA7BF5 90%);
+    /*background: linear-gradient(135deg, #0D652D 0%, #FECE01 33%, #4CAF50 66%, #BA7BF5 100%);*/
+    /*background: linear-gradient(135deg, #0D652D 0%, #BA7BF5 40%, #FECE01 70%, #4CAF50 100%);*/
+    /*background: linear-gradient(135deg, #0D652D 0%, #FECE01 40%, #4CAF50 60%, #BA7BF5 80%);*/
+
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* SVG Style Adjustments */
+.navbar-brand svg {
+    height: 40px; /* Adjust as needed */
+    vertical-align: middle; /* Aligns the SVG with the text */
+    fill: #0D652D; /* Use main green color */
+    transition: fill 0.3s ease-in-out; /* Smooth transition for SVG color */
+    
+}
+
+.navbar-brand span {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #0D652D; /* Text color matching the SVG */
+   
+     transition: color 0.3s ease-in-out; /* Smooth transition for text color */
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.navbar-nav .nav-link {
+    color: #000000;
+    margin-left: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0D652D;
+}
+
+/* Hero Section */
+.hero {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #000000;
+}
+
+.hero .btn-primary {
+    margin-top: 20px;
+}
+
+/* Features, USP, Steps, Testimonials, Pricing, and FAQ Sections */
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.box {
+    background-color: #F0F8F5; /* Lightest green background */
+    border-radius: 8px; /* Slightly rounded corners */
+    color: #000000;
+}
+
+.icon {
+    font-size: 48px;
+    color: #0D652D; /* Main green color */
+}
+
+.feature-item h3,
+.usp-item h3,
+.step h3,
+.pricing-item h3 {
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.feature-item p,
+.usp-item p,
+.step p,
+.pricing-item p,
+.testimonial-item p {
+    font-size: 16px;
+    color: #333333;
+}
+
+.pricing-item .price {
+    font-size: 32px;
+    color: #0D652D;
+    margin: 20px 0;
+}
+
+/* FAQ Section */
+.faq .card {
+    border: none;
+}
+
+.faq .card-header {
+    background-color: #F0F8F5;
+    border-radius: 8px;
+}
+
+.faq .btn-link {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.faq .btn-link:hover {
+    color: #0D652D;
+}
+
+/* Footer */
+.footer {
+    background-color: #FFFFFF;
+    border-top: 1px solid #CCCCCC;
+}
+
+.footer-links a,
+.footer-legal a {
+    color: #000000;
+    margin: 0 10px;
+}
+
+.footer-links a:hover,
+.footer-legal a:hover {
+    color: #0D652D;
+}
+
+.footer-social a {
+    color: #0D652D;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.footer-social a:hover {
+    color: #09481F;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-nav {
+        background-color: #FFFFFF;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        text-align: center;
+        padding-top: 120px;
+    }
+
+    .hero .col-md-6 {
+        margin-bottom: 30px;
+    }
+
+    .feature-item,
+    .usp-item,
+    .step,
+    .pricing-item,
+    .testimonial-item {
+        text-align: center;
+    }
+}
